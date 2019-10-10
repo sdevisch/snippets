@@ -1,0 +1,29 @@
+# Optionally create a new base python 3.7
+conda create -n py37 python=3.7
+conda activate py37
+# to deactivate conda environments
+conda deactivate
+# installing cookiecutter
+conda config --add channels conda-forge
+conda install cookiecutter
+
+
+# pipenv
+pip install pipenv
+pipenv install ...
+pipenv install --dev
+pipenv run python some_python_file
+
+# brew install
+https://medium.com/faun/the-right-way-to-set-up-python-on-your-mac-e923ffe8cf8e
+xcode-select --install ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install python3
+# to upgrade everything
+brew upgrade
+brew install pipenv
+brew postinstall python
+brew install cookiecutter
+
+# git configuration
+https://stackoverflow.com/questions/2643502/how-to-solve-permission-denied-publickey-error-when-using-git
+
