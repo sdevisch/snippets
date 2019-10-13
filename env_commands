@@ -27,3 +27,13 @@ brew install cookiecutter
 # git configuration
 https://stackoverflow.com/questions/2643502/how-to-solve-permission-denied-publickey-error-when-using-git
 
+# pipenv
+pipenv install <some package>
+# after updating setup.py
+pipenv update
+# to install custom packages with links to git
+pipenv install -e .             # don't forget the dot
+
+# docker
+docker-compose build            # after a pipenv install
+docker-compose build --no-cache # to rebuild from scratch
