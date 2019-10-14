@@ -28,3 +28,7 @@ git push -u origin master
 # delete the latest commit as merged
 git reset --hard HEAD^
 git push origin +master #note the + sign
+
+#tags
+git tag
+git tag -a v0.2.0 -m "a relevant message"         # to create an annotated tag

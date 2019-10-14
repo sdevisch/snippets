@@ -1,0 +1,23 @@
+I often wonder... how do conda, travis, tox, pipenv and the associated files interact.
+
+This post tries to demystify some of the inner workings.
+I'll add more over time as things gel.
+
+## How do these things differ and work together
+Travis sets up the python environment; divides tests up in stages; installs python, pip, tox, etc.
+Tox automates testing.
+
+## Sequence of events
+Travis.yml: travis coordinates everything. Configuration through travis.yml. Travis calls tox.
+Tox.ini: tox launches pytest
+Setup.cfg drives what to test and what not to test
+
+
+## pipfile vs. setup
+Pipfile: for applications that are deployed or publicly distributed in installers, use Pipfile
+Setup.py: for applications that are distributed through git, put dependencies in install_requires
+"pipenv install -e ." Make Pipfile depend on setup.py by running pipenv install '-e .'   # don't forget the dot
+Project dependencies - in contrast to environment dependencies should be added to setup.py.
+
+## Reference links
+https://github.com/pypa/pipenv/issues/1263

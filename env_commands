@@ -37,3 +37,14 @@ pipenv install -e .             # don't forget the dot
 # docker
 docker-compose build            # after a pipenv install
 docker-compose build --no-cache # to rebuild from scratch
+
+# version
+python setup.py --version
+cd src
+python -c "import csci_utils; print(csci_utils.__version__)"
+
+# current environment
+set                             # display current environment
+echo "$HOME"
+export PATH=${PATH}:/home/vivek/bin
+export CSCI_SALT='3f87b3a5b7e48ba408964366a7194789249d4ed33b962a9e5d76c5d6122237bc'
