@@ -1,3 +1,7 @@
+# Online resources
+https://git-scm.com/book/en/v2                          # Git pro book
+https://www.conventionalcommits.org/en/v1.0.0/          # Readable commit messages
+
 # Add a repo
 cd 2019fa-csci-utils-viskinho
 git init

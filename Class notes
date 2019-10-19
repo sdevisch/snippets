@@ -1,0 +1,33 @@
+A deployment is any result which drives a decision, programatic or otherwise.
+
+Ideally functions are stateless: they take an input, produce an output, and don't change anything else .
+
+Atomicity: a task is done, or it is not.
+
+Idempotent: confirming - an environment or data - to an expected state.
+Don't say: do this. Say: I want this + define when I want x, this is how to solve it. Easier to test as a unit.
+
+Evolvability: be resilient to changing data
+
+Auditable: we know which code produced which result, and vice versa
+
+Cyclomatic complexity: count nr of if statements
+Reduce to make testing and collaboration easier.n
+
+Make sure your code has consistent
+input and output data types
+
+Code as data examples
+Flow based
+Object based (oriented) programming
+Aspect based programming
+
+# Lambda
+https://www.w3schools.com/python/python_lambda.asp
+A lambda function is a small anonymous function.
+A lambda function can take any number of arguments, but can only have one expression.
+lambda arguments : expression
+x = lambda a: a + 10
+print(x(5))
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
