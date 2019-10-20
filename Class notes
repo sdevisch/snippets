@@ -1,18 +1,25 @@
-A deployment is any result which drives a decision, programatic or otherwise.
 
-Ideally functions are stateless: they take an input, produce an output, and don't change anything else .
 
 Atomicity: a task is done, or it is not.
 
-Idempotent: confirming - an environment or data - to an expected state.
-Don't say: do this. Say: I want this + define when I want x, this is how to solve it. Easier to test as a unit.
-
-Evolvability: be resilient to changing data
-
-Auditable: we know which code produced which result, and vice versa
+Auditability: we know which code produced which result, and vice versa
 
 Cyclomatic complexity: count nr of if statements
 Reduce to make testing and collaboration easier.n
+
+Deployment: any result which drives a decision, programatic or otherwise.
+
+Evolvability: be resilient to changing data
+
+Idempotent: conforming - an environment or data - to an expected state.
+Don't say: do this. Say: I want this + define when I want x, this is how to solve it. Easier to test as a unit.
+Idempotence: From a RESTful service standpoint, for an operation (or service call) to be idempotent,
+clients can make that same call repeatedly while producing the same result.
+In other words, making multiple identical requests has the same effect as making a single request.
+Note that while idempotent operations produce the same result on the server (no side effects),
+the response itself may not be the same (e.g. a resource's state may change between requests).
+
+Stateless (functions): ideally functions are stateless: they take an input, produce an output, and don't change anything else .
 
 Make sure your code has consistent
 input and output data types
@@ -22,12 +29,3 @@ Flow based
 Object based (oriented) programming
 Aspect based programming
 
-# Lambda
-https://www.w3schools.com/python/python_lambda.asp
-A lambda function is a small anonymous function.
-A lambda function can take any number of arguments, but can only have one expression.
-lambda arguments : expression
-x = lambda a: a + 10
-print(x(5))
-x = lambda a, b, c : a + b + c
-print(x(5, 6, 2))
