@@ -1,0 +1,9 @@
+Use
+requirements-test-dev
+add flask
+add pytest-cookiecutter
+
+We should import our psets from pset1
+
+Mock environment variables for a test
+

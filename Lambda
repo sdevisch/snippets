@@ -1,0 +1,25 @@
+
+# Lambda
+https://www.w3schools.com/python/python_lambda.asp
+A lambda function is a small anonymous function.
+A lambda function can take any number of arguments, but can only have one expression.
+lambda arguments : expression
+
+x = lambda a: a + 10
+print(x(5))
+
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+
+
+def myfunc(n):
+  return lambda a : a * n
+
+# pass n to myfunc
+# mydoubler is still a function
+# as
+mydoubler = myfunc(2)
+
+# pass a to mydoubler
+print(mydoubler(11))
+

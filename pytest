@@ -1,0 +1,3 @@
+
+# run a coverage report
+pytest --cov-report html

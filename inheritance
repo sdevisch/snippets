@@ -1,0 +1,34 @@
+
+Abstract class
+Abstract 'base' class
+A skeleton you don't use directly.
+An indirect way to implement an abstract class is to add an NotImplementedError
+Codifies the methods and interface
+Allows you to implement other methods and defaults
+
+Mixins
+partial class
+doesn't implement everything you want to do
+capture orthogonal properties and methods, and mix them in
+
+# self.f() === self.__class__.f(self)
+
+Composition
+Inheritane is a "is a" paradigm
+Composition is a "has a" paradigm
+Composition gives classes their sophistication by giving them properties, and
+delegating responsibilities to them
+goal: allos for more tightly scoped classes
+helps prevent nasty inheritance patterns
+
+Declarative classes
+inheritance is just a new set of defaults
+no new code or functionality
+
+
+Single responsibility principle
+Every module, class, or function should have responsibility over a single part of the functionality
+... it is almost always incorrect to begin the decomposition of a system into modules on the basis of a flowchart
+We propose instead that one begins with a list of difficult design decisions, or
+design decisions which are likely to chane
+Each modeul is then designed to hide such a decision from the others.

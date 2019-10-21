@@ -1,3 +1,18 @@
+# Online resources
+https://git-scm.com/book/en/v2                          # Git pro book
+https://www.conventionalcommits.org/en/v1.0.0/          # Readable commit messages
+
+# Add a repo
+cd 2019fa-csci-utils-viskinho
+git init
+git add --all
+git commit -m "Add initial project skeleton."
+git remote add origin git@github.com:csci-e-29/2019fa-csci-utils-viskinho.git
+
+git remote # to see the list of remotes; often the remote is called origin
+git remote -v # to see details about the list of remotes
+
+
 # revert to a certain commit
 git reset --hard 71c27777543ccfcb0376dcdd8f6777df055ef479
 git push --force
@@ -6,3 +21,18 @@ git push --force
 $ git push -d <remote_name> <branch_name>
 $ git branch -d <branch_name>
 
+
+# merge the remote origin locally before pushing
+git fetch
+git merge origin/master --allow-unrelated-histories
+# Note this will ask you to save a commit message.  If you're unfamiliar with
+# vim, you may need to type ':wq' or Esc then `:wq`
+git push -u origin master
+
+# delete the latest commit as merged
+git reset --hard HEAD^
+git push origin +master #note the + sign
+
+#tags
+git tag
+git tag -a v0.2.0 -m "a relevant message"         # to create an annotated tag
