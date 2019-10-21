@@ -25,7 +25,6 @@ Declarative classes
 inheritance is just a new set of defaults
 no new code or functionality
 
-
 Single responsibility principle
 Every module, class, or function should have responsibility over a single part of the functionality
 ... it is almost always incorrect to begin the decomposition of a system into modules on the basis of a flowchart

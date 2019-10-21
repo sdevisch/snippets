@@ -9,7 +9,7 @@ c = {str(_): _ for _ in a}          # Dict
 uniques = {_ for _ in a}            # Set
 
 # Careful... this is a generator!
-d = (_ + 1 for _ in a)             # notatuple!
+d = (_ + 1 for _ in a)             # not a tuple!
 
 # Functional
 map(some_func, iterable)
