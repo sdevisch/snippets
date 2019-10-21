@@ -4,6 +4,9 @@ Atomicity: a task is done, or it is not.
 
 Auditability: we know which code produced which result, and vice versa
 
+Context manager: defines what happens before and after a bit of code
+it's a class that defines an __enter__ and __exit__ function
+
 Cyclomatic complexity: count nr of if statements
 Reduce to make testing and collaboration easier.n
 
