@@ -1,2 +1,8 @@
 import importlib
 importlib.reload(random_module_name)
+
+# unit tests
+python -m pset_4
+python tests_pset_4.py
+
+pytest --cov-report xml --cov-report term

@@ -24,11 +24,30 @@ the response itself may not be the same (e.g. a resource's state may change betw
 
 Stateless (functions): ideally functions are stateless: they take an input, produce an output, and don't change anything else .
 
-Make sure your code has consistent
-input and output data types
+Make sure your code has consistent input and output data types
 
 Code as data examples
 Flow based
 Object based (oriented) programming
 Aspect based programming
+
+Class3
+Environments
+    - Root: global set of tools
+    - Application: intended for deployment on other computers
+    - Library:  intended to be used in multiple applications
+                don't run directly
+                must be designed to use multiple package versions
+                you may have a development app for a  library
+    - Pipenv: declaratively define a set of dependencies in "code"
+    - Pipfile / setup.py: abstract requirements; minimum set of requirements
+    - Piplock / requirements.txt: frozen app requirements
+ Commands
+ pipenv graph
+
+
+
+
+
+
 

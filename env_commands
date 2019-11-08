@@ -7,11 +7,11 @@ conda deactivate
 conda config --add channels conda-forge
 conda install cookiecutter
 
-
 # pipenv
 pip install pipenv
-pipenv install ...
+pipenv install
 pipenv install --dev
+pipenv shell
 pipenv run python some_python_file
 
 # brew install
@@ -48,3 +48,36 @@ set                             # display current environment
 echo "$HOME"
 export PATH=${PATH}:/home/vivek/bin
 export CSCI_SALT='3f87b3a5b7e48ba408964366a7194789249d4ed33b962a9e5d76c5d6122237bc'
+
+# imports
+# Standard library imports
+import argparse
+import os
+import sys
+import time
+import re
+import numpy as np
+
+
+# Third party imports
+from torch.optim import Adam
+from torch.utils.data import DataLoader
+from torchvision import datasets
+from torchvision import transforms
+import torch.onnx
+
+
+# personal library imports
+
+
+# Local application imports
+from torch.optim import Adam
+from torch.utils.data import DataLoader
+from torchvision import datasets
+from torchvision import transforms
+import torch.onnx
+
+# Standard library imports
+# Third party imports
+# personal library imports
+# Local application imports
