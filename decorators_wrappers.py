@@ -1,13 +1,16 @@
+# standard library imports
 from functools import wraps
 from hashlib import sha256
 from typing import AnyStr
+
+# local imports
 from util import logger
 
 root = logger()
 
 
 def log_me(func):
-    root.info("The decoratoris called during import. Not the wrapped function")
+    root.info("The decorator is called during import. Not the wrapped function")
 
     @wraps(func)  # make sure the original function's name is retained
     def wrapped(

@@ -3,7 +3,9 @@
 from contextlib import contextmanager
 import signal
 import time
+import util
 
+log = util.logger()
 
 @contextmanager
 def write_signature(*args, **kwargs):
@@ -14,21 +16,21 @@ def write_signature(*args, **kwargs):
 
 @contextmanager
 def some_context(provided_number):
-    print("in the context")
+    log.debug("in the context")
     try:
-        print("in try")
+        log.debug("in try")
         yield provided_number + 1    # must be a yield statement
     except KeyboardInterrupt:
-        print("in except")
+        log.debug("in except")
         raise
     finally:
-        print("in finally")
+        log.debug("in finally")
 
 
 try:
     # Absent on Windows, trigger AttributeError
     signal.alarm
-    print("in try")
+    log.debug("in try")
 
     def _timeout(signum, frame):
         raise TimeoutError()
@@ -38,17 +40,17 @@ try:
     @contextmanager
     def timeout(seconds=1, message="Timeout!"):
         # NB: doesn't work on windows
-        print("in timeout")
+        log.debug("in timeout")
         signal.alarm(seconds)
         try:
-            print("in yield")
+            log.debug("in yield")
             yield
         except TimeoutError:
-            print("in timeouterror")
+            log.debug("in timeouterror")
             raise TimeoutError(message)
-            print("after raising error; this is never executed")
+            log.debug("after raising error; this is never executed")
         finally:
-            print("in finally; this is executed even if an error is raised")
+            log.debug("in finally; this is executed even if an error is raised")
             signal.alarm(0)
 
 
