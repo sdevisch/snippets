@@ -1,3 +1,5 @@
 
 # run a coverage report
 pytest --cov-report html
+
+pipenv run pytest your_project
