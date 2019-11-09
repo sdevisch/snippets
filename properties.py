@@ -5,7 +5,10 @@ import logging
 # additional libraries
 from scipy.sparse import csr_matrix
 
-logger = logging.getLogger()
+# local packages
+from util import logger
+
+logger = logger()
 
 
 class SparseMatrix:

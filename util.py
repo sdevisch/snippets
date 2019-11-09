@@ -57,7 +57,6 @@ def some_context(provided_number):
 try:
     # Absent on Windows, trigger AttributeError
     signal.alarm
-    print("in try")
 
     def _timeout(signum, frame):
         raise TimeoutError()
