@@ -1,0 +1,2 @@
+help(instance)
+dir(istance)

@@ -1,0 +1,6 @@
+aws s3 ls s3://cscie29-data/46a4bb62/pset_5/yelp_data/
+
+aws configure
+region us-east-1
+
+aws s3 cp s3://cscie29-data/46a4bb62/pset_5/yelp_data/yelp_subset_19.csv yelp_subset_19.csv --request-payer
