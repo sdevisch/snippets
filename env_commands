@@ -12,11 +12,16 @@ conda create -n sectionspy36 python=3.6
 conda activate sectionspy36
 
 # pipenv
+pip install --user --upgrade pipenv
 pip install pipenv
 pipenv install
 pipenv install --dev
 pipenv shell
 pipenv run python some_python_file
+pipenv install -r path/to/requirements.txt
+# to resolve versioning issues
+python prep_data.py
+pipenv lock --pre --clear
 
 # brew install
 https://medium.com/faun/the-right-way-to-set-up-python-on-your-mac-e923ffe8cf8e

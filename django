@@ -1,0 +1,10 @@
+sqllitebrowers
+
+
+
+python manage.py makemigrations yelp_reviews
+python manage.py migrate
+
+python manage.py sqlmigrate yelp_reviews 0001
+
+python manage.py runserver

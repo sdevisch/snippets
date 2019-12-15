@@ -40,6 +40,7 @@ git tag -a v0.2.0 -m "a relevant message"         # to create an annotated tag
 # set the remote push url to a forked repo
 see: https://medium.com/@mcvidanagama/working-with-git-forks-eff7f07a837c
 git remote set-url --push origin https://github.com/CreditPy/2019fa-csci-utils-viskinho
+git remote -v
 
 import pdb
 pdb.set_trace()
@@ -56,3 +57,6 @@ git merge origin/master --allow-unrelated-histories
 # in vim: esc : qw!
 git push -u origin master
 git remote set-url --push origin https://github.com/CreditPy/2019fa-pset-5-viskinho
+git remote add origin https://github.com/CreditPy/2019fa-pset-6-viskinho
+
+git remote set-url --push https://github.com/CreditPy/2019fa-csci-utils-viskinho

@@ -3,3 +3,9 @@
 pytest --cov-report html
 
 pipenv run pytest your_project
+
+# -s does the prints
+pytest -s src/csci_utils/luigi/test_task.py
+
+# run pytest as module (standard approach)
+python -m pytest

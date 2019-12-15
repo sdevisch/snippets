@@ -1,0 +1,4 @@
+python setup.py --version
+python -c "import csci_utils; print(csci_utils.__version__)"
+
+git tag v0.1.0

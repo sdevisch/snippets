@@ -36,12 +36,17 @@ def main():
         print("Now the name x will be set")
         print("======")
 
+
+
         def __init__(self):
             print("==== instantiating y; only run upon instantiation ===")
             print("Starting My_Class __init__")
             self.y = self.REVEALACCESS()
             print("type of y: ", type(self.y))
 
+
+    print("===== printing MRO ===")
+    print(MyClass.__mro__)
     print("===== no longer in MyClass definition ===")
     print("about to instantiate class MyClass and thus trigger MyClass init")
     m = MyClass()
@@ -86,6 +91,9 @@ def main():
     print("print(help(m2)")
     print(help(m2))
     print(dir(m2))
+
+
+
 
 if __name__ == "__main__":
     main()
